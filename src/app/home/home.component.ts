@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { faGithubAlt, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faArrowDown} from '@fortawesome/free-solid-svg-icons';
 // @ts-ignore
 import Typewriter from 't-writer.js';
 
@@ -8,7 +10,10 @@ import Typewriter from 't-writer.js';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  faGithub = faGithubAlt;
+  faLinkedIn = faLinkedinIn;
+  faTwitter = faTwitter;
+  faArrow = faArrowDown;
   constructor() { }
 
   ngOnInit(): void {

@@ -1,12 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@500&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @layer base {
     html, p {
-        font-family: 'Caveat', cursive;
+        font-family: 'Merienda', cursive;
     }
   }
