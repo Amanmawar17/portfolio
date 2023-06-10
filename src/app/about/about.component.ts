@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faAngular, faCss3, faHtml5, faJs, faPython } from '@fortawesome/free-brands-svg-icons';
-
-import { faCloud } from '@fortawesome/free-solid-svg-icons';
+import { faAngular, faCss3, faHtml5, faJs, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-about',
@@ -14,7 +12,7 @@ export class AboutComponent implements OnInit {
   faCss3 = faCss3;
   faPython = faPython;
   faAngular = faAngular;
-  faCloud = faCloud;
+  faReact = faReact;
   constructor() { }
 
   ngOnInit(): void {
