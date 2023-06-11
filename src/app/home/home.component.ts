@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faGithubAlt, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faArrowDown} from '@fortawesome/free-solid-svg-icons';
-// @ts-ignore
 import Typewriter from 't-writer.js';
 
 @Component({
@@ -40,6 +39,11 @@ export class HomeComponent implements OnInit {
       .rest(500)
       .clear()
       .start()
+  }
+
+  handleclick(event: any){
+    alert('clicked!');
+    console.log(event);
   }
 
 }
