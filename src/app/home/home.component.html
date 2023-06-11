@@ -1,19 +1,19 @@
-<section class="py-8 dark:text-[#ffffff] text-[#000000]">
-    <div class="flex justify-center items-center font-mono gap-12">
-        <div class="self-center flex-col">
+<section id="home" class="py-8 bg-primary text-black h-screen">
+    <div class="flex justify-center max-sm:flex-col-reverse items-center font-mono gap-12">
+        <div class="self-center flex-col p-4">
             <h1 class="text-5xl py-3">Heyy! There, 🫰</h1>
             <h3 class="tw text-3xl py-3"></h3>
             <p class="text-lg py-3">I'm an aspiring front-end developer based in India. <br>I am excited about making
                 responsive and websites.</p>
             <div class="flex justify-start py-3">
-                <a class="mx-2"><button
+                <a href="#resume" class="mx-2"><button
                         class="btn btn-outline text-[#FBBD23] hover:bg-white hover:text-[#FBBD23] download">Resume</button></a>
-                <a class="mx-2"><button
+                <a href="#project" class="mx-2 ease-in"><button
                         class="btn btn-outline bg-white text-[#000000] hover:bg-[#242219] hover:text-[#FBBD23]">Projects</button></a>
             </div>
         </div>
-        <div class="flex self-center flex-col">
-            <figure class="overflow-hidden"><img class="w-60 rounded-full" src="assets/images/aman.png" alt="Photo!" />
+        <div class="flex self-center flex-col p-4 hover:skew-x-1">
+            <figure class="overflow-hidden"><a href="https://storyset.com/data"><img class="h-72 rounded-full" src="assets/images/hero.svg" alt="Photo!" /></a>
             </figure>
             <div class="self-center my-2">
                 <h2>Aman mawar</h2>
@@ -34,11 +34,10 @@
             </div>
         </div>
     </div>
-    <a href="">
-        <button class="animate-bounce cursor-pointer fixed left-1/2 bottom-4">
-            <fa-icon [icon]="faArrow" [classes]="['h-8', 'w-5', 'text-white']">
-            </fa-icon>
-        </button>
-    </a>
+    <a href="#about">
+    <button class="animate-bounce absolute left-1/2 bottom-4" >
+        <fa-icon [icon]="faArrow" [classes]="['h-8', 'w-5', 'text-white']">
+        </fa-icon>
+    </button></a>
 </section>
 <app-about></app-about>
