@@ -4,12 +4,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { ExperienceComponent } from './experience/experience.component';
-import { ProjectComponent } from './project/project.component';
-import { ConnectComponent } from './connect/connect.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { ProjectComponent } from './components/project/project.component';
+import { ConnectComponent } from './components/connect/connect.component';
+import { ExceptComponent } from './components/except/except.component';
+import { FooterComponent } from './components/footer/footer.component';
+
+import { AngularSvgIconModule } from 'angular-svg-icon';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,12 +23,15 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ExperienceComponent,
     ProjectComponent,
     ConnectComponent,
+    ExceptComponent,
+    FooterComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule,
+    HttpClientModule, 
+    AngularSvgIconModule.forRoot()
 
   ],
   providers: [],

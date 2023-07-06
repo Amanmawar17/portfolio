@@ -1,11 +1,11 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { AboutComponent } from './about/about.component';
+import { AboutComponent } from './components/about/about.component';
 import { AppComponent } from './app.component';
-import { ConnectComponent } from './connect/connect.component';
-import { ExperienceComponent } from './experience/experience.component';
-import { HomeComponent } from './home/home.component';
-import { ProjectComponent } from './project/project.component';
+import { ConnectComponent } from './components/connect/connect.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { HomeComponent } from './components/home/home.component';
+import { ProjectComponent } from './components/project/project.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {

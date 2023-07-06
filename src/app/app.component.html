@@ -1,13 +1,19 @@
 <nav
-  class="flex justify-center m-auto  w-10/12 backdrop-blur-lg backdrop-filter bg-opacity-30 sticky top-0 z-10 text-[#000000] dark:text-[#ffffff] py-3">
-  <div class="content-center border-solid rounded-md">
-    <ul class="menu menu-horizontal px-2">
-      <li class="px-2 hover:text-primary"><a href="#home">Home</a></li>
-      <li class="px-2 hover:text-primary"><a href="#about">About</a></li>
-      <li class="px-2 hover:text-primary"><a href="#resume">Resume</a></li>
-      <li class="px-2 hover:text-primary]"><a href="#project">Projects</a></li>
-      <li class="px-2 hover:text-primary"><a href="#connect">Hire me</a></li>
+  class="flex justify-center m-auto w-10/12 backdrop-blur-lg backdrop-filter bg-opacity-30 sticky top-0 z-10 py-2">
+  <div class="rounded-xl">
+    <ul class="flex w-full text-xl max-md:text-sm items-center">
+      <li class="p-3 max-md:p-2 hover:text-primary"><a class="active" href="#home">Home</a></li>
+      <li class="p-3 max-md:p-2 hover:text-primary"><a href="#about">About</a></li>
+      <li class="p-3 max-md:p-2 hover:text-primary"><a href="#project">Projects</a></li>
+      <li class="p-3 max-md:p-2 hover:text-primary"><a href="#resume">Resume</a></li>
+      <li class="p-3 max-md:p-2 hover:text-primary"><a href="#connect">Hire me</a></li>
+      <li class="p-3 max-md:p-2"><button class="outline outline-2 outline-primary p-2 rounded-full" (click)="toggleTheme()" (click)="swapImg()"><svg-icon [src]="img[onImg]"  [svgStyle]="getNgStyle()" [applyClass]="true"  ></svg-icon></button></li>
     </ul>
   </div>
 </nav>
 <app-home></app-home>
+<app-about></app-about>
+<app-project></app-project>
+<app-experience></app-experience>
+<app-connect></app-connect>
+<app-footer></app-footer>
